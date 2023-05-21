@@ -10,11 +10,8 @@ const getMean = (numbers)=> {
 
 
 
-const getMedian = (nums) => {
+const getMedian = (numbers) => {
      
-  
-    // split into numbers
-    const numbers = nums.split(",").map(Number)
 
     // Sort numbers
     let sortedNumbers = numbers.sort((a, b) => a - b)
@@ -42,9 +39,8 @@ const getMedian = (nums) => {
 }
 
 
-const getMode = (nums) => {
+const getMode = (numbers) => {
 
-    const numbers = nums.split(",").map(Number)
     
     // sort the numbers
     let sortedNumbers = numbers.sort((a, b) => a - b)

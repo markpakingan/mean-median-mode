@@ -49,7 +49,7 @@ app.get('/median', (req, res)=> {
     }
 
   
-    let median = getMedian(nums)
+    let median = getMedian(numbers)
 
     const response = {
         operation: "median",
@@ -77,7 +77,7 @@ app.get('/mode', (req, res) =>{
         throw new ExpressError("there's an invalid number, please check!", 403)
     }
     
-    let mode = getMode(nums)
+    let mode = getMode(numbers)
 
     const response = {
         operation: "mode",
